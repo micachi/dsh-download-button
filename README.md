@@ -121,8 +121,8 @@ Client                                   Host
 - `GET /api/download.file?path=.../demo-report.html`
   → **200**、`Content-Disposition: attachment; filename="demo-report.html"`、
   **1,695 bytes が元ファイルと完全一致**
-- 配信カード経由（`sessionId` + `seq` + `index`、`README.md` のカード）
-  → **200**、**9,292 bytes 一致**
+- 配信カード経由（`sessionId` + `seq` + `index`、`demo-report.html` のカード）
+  → **200**、**1,695 bytes 一致**
 - 未認証 → **401**、存在しないパス → **404**、ディレクトリ → **403**、相対パス → **400**
 - 非 ASCII 名 `日本語 ファイル (1).html`
   → `filename*=UTF-8''%E6%97%A5%E6%9C%AC%E8%AA%9E%20...` で正しくエンコード
