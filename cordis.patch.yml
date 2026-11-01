@@ -1,0 +1,7 @@
+# dsh-download-button: download buttons for delivered files and the document preview.
+- insert:
+    - id: download-button
+      name: dsh-download-button
+      config:
+        # Largest file the download route serves, in bytes (64 MiB).
+        maxBytes: 67108864
